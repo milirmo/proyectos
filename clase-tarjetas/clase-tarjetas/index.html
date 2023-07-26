@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clase - tarjetas</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="romero.js"></script>
+  </head>
+
+  <body>
+    <h1>10 Razas de Gatos (o quizás más)</h1>
+    <select id="seleccion" onchange="Elegirdivs()">
+      <option value="0" disabled selected>
+        Seleccione cuantas razas desea ver
+      </option>
+      <option value="1">1 Raza</option>
+      <option value="2">2 Razas</option>
+      <option value="3">3 Razas</option>
+      <option value="4">4 Razas</option>
+      <option value="5">5 Razas</option>
+      <option value="6">6 Razas</option>
+      <option></option>
+      <option value="7">7 Razas</option>
+      <option value="8">8 Razas</option>
+      <option value="9">9 Razas</option>
+      <option value="10">10 Razas</option>
+    </select>
+
+    <select id="seleccion2" onchange="Elegirtipo()">
+      <option value="0" disabled selected>
+        Seleccione que tipo de razas quiere ver
+      </option>
+      <option value="1">Razas grandes</option>
+      <option value="2">Razas medianas</option>
+      <option value="3">Razas chicas</option>
+    </select>
+
+    <div id="tarjetas">
+      <div id="general">
+        <div id="t1" class="tarjeta hidden mediano">
+          <h1>Gato Siames</h1>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/60/Neighbours_Siamese.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: El siamés es un gato de tamaño mediano y cuerpo largo y
+            flexible, que es grácil y elegante pero sin perder su aspecto
+            musculoso. Su cuerpo es equilibrado y atlético, las patas son
+            esbeltas y las zarpas, pequeñas y ovaladas.
+          </p>
+          <p>
+            Personalidad: La raza suele ser abierta, extrovertida y, a veces,
+            muy ruidosa. Los siameses reclaman atención y necesitan sentirse
+            parte de la familia.
+          </p>
+          <p>
+            Origen: El siamés es originario de la actual Tailandia y su
+            existencia se remonta a cientos de años. Dice la leyenda que los
+            siameses eran sagrados y protegían los templos budistas.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/siames"
+          />
+        </div>
+
+        <div id="t2" class="tarjeta hidden grande">
+          <h1>Gato Bosque de Noruega</h1>
+          <img
+            src="https://gatodomestico.com/wp-content/uploads/2019/01/gato-bosque-de-noruega-1.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: El bosque de Noruega es de mayor tamaño que el gato medio.
+            Es una raza elegante con un pelaje semilargo. Tiene un cuerpo largo,
+            musculoso y de constitución fuerte.
+          </p>
+          <p>
+            Personalidad: A los gatos bosque de Noruega les encanta la gente y
+            se desarrollan mejor con compañía humana. A veces, pueden ser muy
+            insistentes pidiendo atención. En otras ocasiones, puede que se
+            muestren bastante independientes. Están acostumbrados a la vida al
+            aire libre.
+          </p>
+          <p>
+            Origen: Se cree que esta raza tiene su origen en los gatos de pelo
+            corto traídos por los vikingos desde Gran Bretaña y de los gatos de
+            pelo largo que los Cruzados llevaron a Escandinavia, que
+            posteriormente se aparearon con gatos de granja y silvestres
+            locales.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/bosque-de-noruega"
+          />
+        </div>
+
+        <div id="t3" class="tarjeta hidden mediano">
+          <h1>Gato Bengali</h1>
+          <img
+            src="https://www.tiendanimal.es/articulos/wp-content/uploads/2020/04/gato-bengali-1200x900.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: El aspecto salvaje del bengalí lo realza su característico
+            pelaje: moteado o marmolado, espeso y suntuoso. Su cabeza ancha
+            tiene orejas pequeñas y mejillas pronunciadas, los ojos tienen un
+            contorno negro y forma almendrada.
+          </p>
+          <p>
+            Personalidad: Los gatos bengalíes muestran seguridad y confianza en
+            sí mismos y, además, son cariñosos. Son muy juguetones por
+            naturaleza y rebosan energía. Los bengalíes son listos y parece que
+            miren todo lo que les rodea preguntando "¿Puedo jugar con esto?".
+          </p>
+          <p>
+            Origen: El bengalí es una raza de gato relativamente reciente,
+            creada mediante el cruce de un gato leopardo asiático con un gato
+            doméstico en EE. UU. El bengalí se llama así por el nombre en latín
+            de su ancestro salvaje, el Felis bengalensis (gato leopardo
+            asiático).
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/bengali"
+          />
+        </div>
+
+        <div id="t4" class="tarjeta hidden chico">
+          <h1>Gato Bombay</h1>
+          <img
+            src="https://www.feelcats.com/wp-content/uploads/2018/08/bombay-gato.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: un pelaje negro azabache muy brillante que parece charol. El
+            cráneo es ligeramente redondeado, tiene las orejas redondeadas y un
+            hocico ancho. Sus preciosos ojos de color cobre o dorado están
+            bastante separados y son intensos y expresivos. El cuerpo es firme y
+            musculoso, con un lomo recto y fuerte.
+          </p>
+          <p>
+            Personalidad: Los gatos del grupo de razas asiáticas son muy
+            amistosos y cariñosos. Los bombay tienen una voz característica y
+            suelen ser muy maulladores. No tienen un maullido tradicional.
+          </p>
+          <p>
+            Origen: El bombay es uno de los gatos del grupo asiático que surgió
+            cuando unos criadores quisieron crear unos gatos de tipo burmés con
+            colores no típicos del burmés. En el Reino Unido, el bombay es la
+            versión negra del asiático.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/bombay"
+          />
+        </div>
+
+        <div id="t5" class="tarjeta hidden mediano">
+          <h1>Gato Birmano</h1>
+          <img
+            src="https://1.bp.blogspot.com/-1wNwazrNoR4/X7lXU7AxOgI/AAAAAAAAuH4/U3USExFfJf0lvm-m4SjHUk0cYG8d5C8HgCLcBGAsYHQ/s743/Beautiful-Seal-Point-Birman-Cat.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: El birmano es un gato de pelo semilargo de color más oscuro
+            hacia las marcas distales, y algo más claro en el resto del cuerpo.
+            Es un gato relativamente grande, con un cuerpo rechoncho y de patas
+            cortas. El birmano tiene los ojos azules y las cuatro zarpas de
+            color blanco puro.
+          </p>
+          <p>
+            Personalidad: Se les conoce por ser muy afectuosos y cariñosos,
+            gracias a haber sido criados como gatos de compañía durante muchas
+            generaciones. Son dóciles y maúllan con suavidad. Son gatos listos,
+            amistosos, y curiosos.
+          </p>
+          <p>
+            Origen: Aunque no hay un registro claro del origen de los birmanos,
+            se dice que se llevó una pareja a Francia en 1919, a partir de la
+            cual se estableció la raza en el mundo occidental.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/birmano"
+          />
+        </div>
+
+        <div id="t6" class="tarjeta hidden chico">
+          <h1>Gato Korat</h1>
+          <img
+            src="https://gatosygatitos.net/wp-content/uploads/2012/09/Sin-t%C3%ADtulo-16.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: El pelaje del korat es corto, fino y brillante, ceñido a su
+            cuerpo fuerte y musculoso. Se presenta en un único color, que
+            consiste en un tono azul con las puntas plateadas. La trufa, los
+            labios y las almohadillas de las patas son de color azul grisáceo
+            oscuro o lavanda. La cabeza tiene una forma de corazón muy
+            característica, con orejas y ojos grandes y una expresión de alerta.
+          </p>
+          <p>
+            Personalidad: Estos gatos tienen un carácter tranquilo y dulce, pero
+            muy inteligente y juguetón. Son unas mascotas ideales y se muestran
+            entregados con sus compañeros humanos.
+          </p>
+          <p>
+            Origen: El korat debe su nombre a una provincia de Tailandia. En
+            Tailandia, donde la raza se conoce como Si-Sawat (que significa
+            buena suerte), se regalaba una pareja de korat como presente
+            tradicional para una novia.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/korat"
+          />
+        </div>
+
+        <div id="t7" class="tarjeta hidden mediano">
+          <h1>Gato Americano de pelo duro</h1>
+          <img
+            src="https://animalesmascotas.com/wp-content/uploads/2013/10/razas-de-gatos-americano-pelo-corto-600x427.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: El gato americano de pelo duro es grande y tiene un pelaje
+            duro, elástico y áspero; cada pelo, de tamaño corto o mediano, es
+            fino y encrespado o rizado. Los bigotes suelen ser rizados. El
+            alcance completo del «rizado» no se manifiesta hasta que el gato es
+            adulto.
+          </p>
+          <p>
+            Personalidad: A los gatos bosque de Noruega les encanta la gente y
+            se desarrollan mejor con compañía humana. A veces, pueden ser muy
+            insistentes pidiendo atención. En otras ocasiones, puede que se
+            muestren bastante independientes. Están acostumbrados a la vida al
+            aire libre.
+          </p>
+          <p>
+            Origen: Se cree que esta raza tiene su origen en los gatos de pelo
+            corto traídos por los vikingos desde Gran Bretaña y de los gatos de
+            pelo largo que los Cruzados llevaron a Escandinavia, que
+            posteriormente se aparearon con gatos de granja y silvestres
+            locales.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/americano-de-pelo-duro"
+          />
+        </div>
+
+        <div id="t8" class="tarjeta hidden grande">
+          <h1>Gato Abisinio</h1>
+          <img
+            src="https://okdiario.com/img/2019/06/20/lo-que-necesitas-saber-sobre-la-raza-de-gato-abisinio-620x349.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: Los abisinios son gatos elegantes de tamaño mediano con un
+            cuerpo ágil y fuerte, y patas esbeltas. Tienen la cabeza cuneiforme
+            redondeada, con pequeños mechones característicos en las puntas de
+            las orejas y ojos grandes y almendrados.
+          </p>
+          <p>
+            Personalidad: El abisinio es silencioso, inteligente y curioso; se
+            dice que es fiel, disfruta de la compañía humana y se encariña con
+            la familia. Le encanta el espacio y la actividad, es un buen
+            trepador y le gustan los jardines llenos de árboles y lugares altos.
+          </p>
+          <p>
+            Origen: También recuerda al antepasado salvaje africano del gato
+            doméstico. La historia del gato abisinio en el Reino Unido no es muy
+            clara, pero seguramente lo trajo de Abisinia (actual Etiopía) el
+            personal del ejército a su regreso en los 1860.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/abisinia"
+          />
+        </div>
+
+        <div id="t9" class="tarjeta hidden grande">
+          <h1>Gato Bosque de Siberia</h1>
+          <img
+            src="https://www.mundogato.net/wp-content/uploads/gato-siberiano.jpg"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: El bosque de Siberia es un gato bastante grande, de
+            constitución musculosa y torso en forma de barril. Tiene un pelaje
+            largo y denso y la cabeza es, en cierto modo, cuneiforme, aunque
+            presenta contornos redondeados y unos ojos son muy expresivos.
+          </p>
+          <p>
+            Personalidad: El siberiano es cariñoso y le encanta que le presten
+            atención. Esta raza tiene fama de fiel, sociable y segura de sí
+            misma. El bosque de Siberia es muy inteligente y se las apaña para
+            conseguir lo que quiere.
+          </p>
+          <p>
+            Origen: El bosque de Siberia es el gato nacional de Rusia. Esta raza
+            natural existe en Rusia desde hace cientos de años. Hay pruebas
+            documentales que demuestran la existencia de los siberianos nada
+            menos que en el año 1000 y se rumorea que es el antepasado de la
+            mayoría de las razas de pelo largo actuales.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/bosque-de-siberia"
+          />
+        </div>
+
+        <div id="t10" class="tarjeta hidden mediano">
+          <h1>Gato Bobtail japonés de pelo corto</h1>
+          <img
+            src="https://images.spot.im/v1/production/fxe99nvuu9bqrzxuuvjd"
+            alt=""
+          />
+          <p></p>
+          <p>
+            Cuerpo: El bobtail japonés tiene una forma elegante y una
+            musculatura bien desarrollada. Tienen una cola que parece un pompón
+            o una cola de conejo. Este es su razgo caracteristico: Cuando el
+            gato está relajado y en posición natural, la cola esta enroscada
+            como la de un conejo, pero la puede desenroscar hasta unos 10 o 12
+            cm.
+          </p>
+          <p>
+            Personalidad: El bobtail japonés es simpático e inteligente. Se
+            lleva bien con casi todos los animales y le encanta la compañía
+            humana. Algunos aprenden trucos y deben mantenerse entretenidos y
+            estimulados. Es una raza bastante maulladora.
+          </p>
+          <p>
+            Origen: En Japón, la existencia de la raza se remonta al siglo VIII,
+            pero no se vio fuera de Japón hasta la década de los sesenta, cuando
+            se importaron a Estados Unidos los bobtails japoneses de pelo corto.
+          </p>
+          <input
+            id="botones"
+            type="button"
+            value="Sitio web"
+            onclick="location.href"
+            ="https://www.purina.es/encuentra-mascota/razas-de-gato/bobtail-de-pelo-corto"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="creartarjetas">
+      <form>
+        <fieldset>
+          <h2>Agrega tus propias razas:</h2>
+
+          <label>Colocale un titulo</label><br />
+          <input type="text" id="titulo" class="crear" /><br />
+
+          <label>Pon el link de una imagen relacionada</label><br />
+          <input type="url" id="imagen" class="crear" /><br />
+
+          <label>Haz un texto sobre la raza</label><br />
+          <textarea id="texto"></textarea><br />
+
+          <input
+            type="button"
+            value="Cargar raza"
+            onclick="Agregarazas()"
+            class="crear"
+          />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
